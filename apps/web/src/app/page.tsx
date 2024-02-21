@@ -5,6 +5,7 @@ const Home = () => {
     <main>
       <h1>My Music</h1>
       <Button appName="web">Example button</Button>
+      <Button appName="web">Example button AWS PR Preview</Button>
     </main>
   );
 };
