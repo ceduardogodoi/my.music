@@ -4,12 +4,13 @@ applications:
       phases:
         preBuild:
           commands:
+            - npm install -g pnpm
             - npx pnpm install
         build:
           commands:
             - npx turbo run build --filter=web
       artifacts:
-        baseDirectory: .next
+        baseDirectory: apps/web/.next
         files:
           - '**/*'
       cache:
