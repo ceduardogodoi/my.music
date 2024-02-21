@@ -8,7 +8,7 @@ applications:
             - npx pnpm install
         build:
           commands:
-            - npx turbo run build --filter=web
+            - pnpx turbo run build --filter=web
       artifacts:
         baseDirectory: apps/web/.next
         files:
